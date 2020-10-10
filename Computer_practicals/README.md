@@ -113,7 +113,7 @@ Briefly, you need to do the following:
     -   windows: download it from
         <https://miktex.org/howto/install-miktex>
     -   macos: download it from <https://www.tug.org/mactex/>
-2.  Install R computing environment version R 2.14.0 or later.
+2.  Install R computing environment version R 3.6.3 or later.
     -   Source: download it from here: <https://cran.r-project.org/>  
     -   Debian: *sudo apt install r-base*  
     -   Fedora: *yum install -y R*  
@@ -139,15 +139,15 @@ Briefly, you need to do the following:
     
     4. in the *URL of your Git repository* section insert the link: 
         
-        <https://github.com/georgios-stats/Bayesian_Statistics.git> 
+        <https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020.git> 
         
-        ... this will gonna download the whole Bayesian learning teaching material.  
+        ... this will gonna download the whole learning teaching material.  
     
     5. In R terminal run  
         
-        setwd('./Computer_practicals/Computer_practical_1/') # to set your working directory  
+        setwd('./Computer_practicals/') # to set your working directory  
         
-        ... and click on the suitable *.Rmd* file in the *'./Computer_practicals/Computer_practical_1/'* directory.  
+        ... and click on the suitable *.Rmd* file in the *'./Computer_practicals/'* directory.  
 
 ### How to download and use it in Rstudio on your computer
 
@@ -157,7 +157,7 @@ To download this handout, run rstudio, and do the following
 
 2.  In the section *Repository URL* write
     
-    + <https://github.com/georgios-stats/Bayesian_Statistics.git>
+    + <https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020.git>
     
     + ... and complete the rest as you wish
 
