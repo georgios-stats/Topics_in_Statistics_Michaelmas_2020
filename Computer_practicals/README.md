@@ -44,18 +44,18 @@ Preview:
 Computer practical 1
 
 -   [Sheet for Computer practical 1
-    (questions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/Computer_practical_1/Computer_practical_1.nb.html)
+    (questions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/Computer_practical_1.nb.html)
 
 -   [Sheet for Computer practical 1
-    (solutions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/Computer_practical_1/Computer_practical_1_full.nb.html)
+    (solutions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/Computer_practical_1_full.nb.html)
 
 Computer practical 2
 
 -   [Sheet for Computer practical 2
-    (questions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/Computer_practical_2/Computer_practical_2.nb.html)
+    (questions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/Computer_practical_2.nb.html)
 
 -   [Sheet for Computer practical 2
-    (solutions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/Computer_practical_2/Computer_practical_2_full.nb.html)
+    (solutions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/Computer_practical_2_full.nb.html)
 
 ------------------------------------------------------------------------
 
