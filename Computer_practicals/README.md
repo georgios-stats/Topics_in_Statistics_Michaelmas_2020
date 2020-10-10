@@ -44,18 +44,18 @@ Preview:
 Computer practical 1
 
 -   [Sheet for Computer practical 1
-    (questions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/Computer_practical_1.nb.html)
+    (questions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/saved_output/Computer_practical_1.nb.html)
 
 -   [Sheet for Computer practical 1
-    (solutions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/Computer_practical_1_full.nb.html)
+    (solutions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/saved_output/Computer_practical_1_full.nb.html)
 
 Computer practical 2
 
 -   [Sheet for Computer practical 2
-    (questions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/Computer_practical_2.nb.html)
+    (questions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/saved_output/Computer_practical_2.nb.html)
 
 -   [Sheet for Computer practical 2
-    (solutions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/Computer_practical_2_full.nb.html)
+    (solutions)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Computer_practicals/saved_output/Computer_practical_2_full.nb.html)
 
 ------------------------------------------------------------------------
 
@@ -86,13 +86,27 @@ Setting up the computing environment
 
 ### CIS computers
 
+1. Go to [Appsanywhere](https://appsanywhere.durham.ac.uk/login) and log in with your CIS account details  
+
+    + <https://appsanywhere.durham.ac.uk/login>  
+
 From AppHub, load the modules:
 
-1.  Google Chrome
+2. Git  (wait until it opens)   
 
-2.  LaTex
+3. LaTex (Latex - Miktex Texworks 2.9.6753)   (wait until it opens)    
 
-3.  rstudio
+4. rstudio (RStudio 1.2.5003 with RStan and Rtools)    (wait until it opens)   
+
+<!--
+### CIS computers
+
+From AppHub, load the modules:
+
+1.  LaTex
+
+2.  rstudio
+-->
 
 ### Your personal computers (Do not do it on CIS computers)
 
@@ -114,7 +128,7 @@ Briefly, you need to do the following:
         <https://miktex.org/howto/install-miktex>
     -   macos: download it from <https://www.tug.org/mactex/>
 2.  Install R computing environment version R 3.6.3 or later.
-    -   Source: download it from here: <https://cran.r-project.org/>  
+    -   Source: download the installer from: <https://cran.r-project.org/>, and install it according to the installation instructions   
     -   Debian: *sudo apt install r-base*  
     -   Fedora: *yum install -y R*  
     -   windows: download it from <https://cran.r-project.org/>
