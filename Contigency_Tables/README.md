@@ -37,3 +37,5 @@
 
 
 [Exercises_ContigencyTables.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/Exercises_ContigencyTables.pdf) 
+
++ [RNotebook file for Q7.(1-5)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/q7_R.nb.html)
