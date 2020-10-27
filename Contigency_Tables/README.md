@@ -27,21 +27,31 @@
 
 # Handouts:
 
+Introduction to 2 way contigency tables  
 
-[01.Intro_to_2way_tables.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/01.Intro_to_2way_tables.pdf)    
++ [01.Intro_to_2way_tables.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/01.Intro_to_2way_tables.pdf)    
+
+Introduction to 3 way contigency tables  
 
 [02.Intro_to_3way_tables.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/02.Intro_to_3way_tables.pdf)    
+
+Introduction to lo-linear models for contigency tables  
+
++ [Handouts_LogLinearModel.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/Handouts_LogLinearModel.pdf)    
 
 
 # Exercises:
 
+Exercises on contigency tables 
 
-[Exercises_ContigencyTables.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/Exercises_ContigencyTables.pdf) 
++ [Exercises_ContigencyTables.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/Exercises_ContigencyTables.pdf)  
 
-+ [RNotebook file for Q7.(1-5)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/q7_R.nb.html)  
+  + [RNotebook file for Q7.(1-5)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/q7_R.nb.html)  
 
-+ [RNotebook file for Q4.(1-3)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/q2_R.nb.html)
+  + [RNotebook file for Q4.(1-3)](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/q2_R.nb.html)
 
-[Exercises_LogLinearModel.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/Exercises_LogLinearModel.pdf) 
+Exercises on log linear models contigency tables 
+
++ [Exercises_LogLinearModel.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/Exercises_LogLinearModel.pdf)  
 
 
