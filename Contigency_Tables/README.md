@@ -33,7 +33,7 @@ Introduction to 2 way contigency tables
 
 Introduction to 3 way contigency tables  
 
-[02.Intro_to_3way_tables.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/02.Intro_to_3way_tables.pdf)    
++ [02.Intro_to_3way_tables.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/02.Intro_to_3way_tables.pdf)    
 
 Introduction to lo-linear models for contigency tables  
 
