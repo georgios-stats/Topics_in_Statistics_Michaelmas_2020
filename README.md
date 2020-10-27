@@ -41,7 +41,7 @@ Students will be able to:
 Preview:
 ========
 
-[Contigency tables](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/tree/master/Contigency_Tables#handouts)  
+[Contigency tables, and Log linear models](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/tree/master/Contigency_Tables#handouts)  
 
 - Handouts and Exercises  
 
