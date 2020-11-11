@@ -54,4 +54,6 @@ Exercises on log linear models contigency tables
 
 + [Exercises_LogLinearModel.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/Exercises_LogLinearModel.pdf)  
 
+  + [RNotebook file for Q9.](https://htmlpreview.github.io/?https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Contigency_Tables/q9LL_R.nb.html)  
+
 
