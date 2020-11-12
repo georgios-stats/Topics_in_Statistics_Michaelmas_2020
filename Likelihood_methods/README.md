@@ -36,6 +36,6 @@ Handout 1: Basic probability tools in asymptotics
 
 Exercises on Likelihood methods  
 
-+ [Exercises_Likelihood_Methods.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Likelihood_methods/Exercises_Likelihood_Methods)   
++ [Exercises_Likelihood_Methods.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Likelihood_methods/Exercises_Likelihood_Methods.pdf)   
 
 
