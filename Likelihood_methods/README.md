@@ -25,6 +25,35 @@
 
 ------------------------------------------------------------------------
 
+# References:
+
+About classical statistics inference
+
++ Lehmann, E. L., & Casella, G. (2006). Theory of point estimation. Springer Science & Business Media.  
+
++ Lehmann, E. L. (2004). Elements of large-sample theory. Springer Science & Business Media.   
+
+About Likelihood methods  
+
++ Severini, T. A. (2000). Likelihood methods in statistics. Oxford University Press.  
+
+    + Great deal in Likelihood methods.  
+
+    + More rigorous, it hides some crucial details which can lead to misunderstandings (compared to Lehmann's books). So dangerous...  
+
++ Pawitan, Y. (2001). In all likelihood: statistical modelling and inference using likelihood. Oxford University Press.  
+
+    + Presents likelihood methods with examples. 
+
+    + Less rigorous than Severini's book.  
+
+About Asymptotic statistics:  
+
++ Serfling, R. J. (2009). Approximation theorems of mathematical statistics (Vol. 162). John Wiley & Sons.  
+
+You may notice that the above references may treat concepts in different manner (e.g., use different assumptions to derive the same results. eg asymptotic distribution of MLE. This is reasonable.) 
+
+
 # Handouts:
 
 Handout 1: Basic probability tools in asymptotics  
