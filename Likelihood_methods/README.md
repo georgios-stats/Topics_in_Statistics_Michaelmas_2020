@@ -60,6 +60,10 @@ Handout 1: Basic probability tools in asymptotics
 
 + [01.Handout_Basic_probability_tools_in_asymptotics.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Likelihood_methods/01.Handout_Basic_probability_tools_in_asymptotics.pdf)     
 
++ [02.Handout_basic_tools_for_asymptotics_in_statistics.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Likelihood_methods/02.Handout_basic_tools_for_asymptotics_in_statistics.pdf)    
+
++ [03.Handout_asymptotics_after_transformation.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Likelihood_methods/03.Handout_asymptotics_after_transformation.pdf)    
+
 
 # Exercises:
 
