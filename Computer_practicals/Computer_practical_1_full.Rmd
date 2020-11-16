@@ -1,3 +1,13 @@
+---
+title: 'Computer practical 1: Topics in Statistics III/IV, Term 1'
+author: "Georgios Karagiannis"
+output:
+  html_notebook: default
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
 <!-- -------------------------------------------------------------------------------- -->
 
 <!-- Copyright 2020 Georgios Karagiannis -->
@@ -22,20 +32,9 @@
 
 <!-- -------------------------------------------------------------------------------- -->
 
----
-title: 'Computer practical 1: Topics in Statistics III/IV, Term 1'
-author: "Georgios Karagiannis"
-output:
-  html_notebook: default
-  pdf_document: default
-  word_document: default
-  html_document: default
----
 
 > Aim
 >
-> * To be become familiar with R Notebook.
-> 
 > * To become familiar with Iterative Proportional Fitting (IPF) method
 > * Apply IPF method to produce MLE for the Log Linear models
 > 
@@ -44,82 +43,6 @@ output:
 >
 > * Extensions of Newton method, and IPF method to to produce MLEs for 4-way and higher order tables
 
-
----------
-
-# About R Markdown Notebook
-
-***What it is***
-
-[R Markdown Notebook](http://rmarkdown.rstudio.com/r_notebooks.html)  :
-
-*  creates documents that contain explanatory text, mathematical equations, live code, and visualizations.  
-
-*  produces fully interactive documents allowing the readers to change the parameters underlying the analysis, and see the results immediately.  
-
-*  produces interactive statistical reports that include data analysis, code, and results.  
-
-### An R Notebook demo:
-
-In what follows, we provide a simple demo to help you familiarise yourselves with the R Markdown Notebook environment.
-
-This is an [R Markdown Notebook](http://rmarkdown.rstudio.com/r_notebooks.html). When you execute code within the Notebook, the results appear beneath the code. 
-
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
-
-```{r, echo=TRUE, echo=TRUE, results='markup', collapse=TRUE}
-summary(cars)
-plot(cars)
-```
-
-***How it works (Skip it)***
-
-Creating documents with R Markdown Notebook, requires the user to create a .Rmd (script) file that contains a combination of [Markdown](http://rmarkdown.rstudio.com) code (that produced the explanatory text) and [R](https://www.r-project.org/) code chunks (that produce plots, and data analysis outputs). Then the .Rmd file is processed automatically by the software in order to generate a document in a format such as: HTML (web page), PDF, MS Word document, slide show, handout, book, dashboard, package vignette, etc.
-
-In this practical, we will not go into details about Markdown coding, although it is has a super simple syntax. We recommend the interested student to read the nice cheat-sheet available from [[here]](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf). 
-
-***How to tune presentation (Skip it)***
-
-The user to specify how the chunk will be executed, or how its output will be presented, by setting the appropriate flags inside {r, ...}. If time permits, use the following flags in the previous chuck. What is their effect?
-
-* eval: (TRUE; logical) whether to evaluate the code chunk; it can also be a numeric vector to select which R expression(s) to evaluate, e.g. eval=c(1, 3, 4) or eval=-(4:5)
-
-* echo: (TRUE; logical or numeric) whether to include R source code in the output file. Besides TRUE/FALSE which completely turns on/off the source code, we can also use a numeric vector to select which R expression(s) to echo in a chunk, e.g. echo=2:3 means only echo the 2nd and 3rd expressions, and echo=-4 means to exclude the 4th expression.  
-* results: ('markup'; character) takes these values  
-
-    + hold: hold all the output pieces and push them to the end of a chunk  
-    + hide: hide results; this option only applies to normal R output (not warnings, messages or errors)
-    + markup: mark up the results using the output hook, e.g. put results in a special LaTeX environment
-    
-* collapse: (FALSE; logical; applies to Markdown output only) whether to, if possible, collapse all the source and output blocks from one code chunk into a single block (by default, they are written to separate blocks)
-
-More options can be found at [https://yihui.name/knitr/options/](https://yihui.name/knitr/options/).
-
-You can use inline R code inside a sentence. For example you can say that the average speed of the car is `r mean(cars$speed)`, with standard error `r sqrt(var(cars$speed))/length(cars$speed)`. Now see the output document.
-
-
-***Do the following:***
-
-(...below the enumerated list)
-
-1. Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.  
-2. Write a simple R command inside this chunk, just to experiment; E.g. write down hist(cars$speed). 
-3. Run this R chunk as described earlier.
-
-
-
-
-
-
-***Produce the document:***
-
-The document will be saved in the working directory.
-
-* To produce and save the document as a Notebook: click the *Preview* button (or *Knit* button) or press *Ctrl+Shift+K* to preview the HTML file.  
-    + When you save the notebook, an HTML file containing the code and output will be saved alongside it.  
-    
-* To produce and save the document in HTML, PDF or MS Word formats: select the option *Knit to HTML* (or PDF, or Word) available in the menu that appears when you click the little black arrow next to the *Preview* button (or *Knit* button).  
-    + This will produce the document in more standard / less functional formats.
 
 ---------
 
@@ -182,6 +105,7 @@ obs.addmargins
 > *  Save it in `obs.mc.xtabs`.
 
 ```{r}
+obs.xtabs <- xtabs(count ~ marijuana+cigarette+alcohol, data=obs.frame)
 obs.mc.xtabs <- margin.table(obs.xtabs, margin=c(1,2))
 obs.mc.xtabs
 ```
@@ -193,6 +117,7 @@ obs.mc.xtabs
 > *  Save it in `obs.prop.table`.
 
 ```{r}
+obs.xtabs <- xtabs(count ~ marijuana+cigarette+alcohol, data=obs.frame)
 obs.prop.table <- prop.table(obs.xtabs)
 obs.prop.table
 ```
@@ -207,6 +132,7 @@ obs.prop.table
 obs.prop.frame <- as.data.frame(obs.prop.table)
 ```
 
+
 > As a homework, you can furhter experiment with commands   
 > 
 > * `margin.table` : computing  marginal tables  
@@ -216,6 +142,211 @@ obs.prop.frame <- as.data.frame(obs.prop.table)
 > * `addmargins`   : putting margins on tables;  
 > 
 >     + e.g., obs.prop.margin <- addmargins(prop.table(obs.xtabs))  
+
+
+```{r}
+#
+# Do it later ...
+#
+```
+
+
+---
+
+# Odds ratio calculations
+
+> Code an R function, named 'odds.ratio' with:  
+>
+> * Inputs:  
+>   * x : a 2 by 2 matrix whose elements are the observed counts of a 2 by 2 contigency table  
+>   * conf.level : with default input value 0.95 representing the confidence level  
+>   * theta0 : with default value 1 representing a null hypothesis value of the odds ratio test  
+>
+> * Outputs:  
+>   * estimator : representing mle of odds satio  
+>   * log.estimator : representing the mle of log odds ratio
+>   * asympt.SE : representing the standard error / standard deviation of the mle of odds ratio  
+>   * conf.interval: representing  confidence interval of mle of odds ratio at sig level conf.level (from the inputs)
+>   * conf.level =representing  confidence level 
+>   * Ztest : representing the test statistic for the odds ratio test (2 tails) 
+>   * p.value : representing the p value of the odds ratio test (2 tails) 
+>   * log.conf.interval : representing in log scale the confidence interval of mle of odds ratio at sig level conf.level (from the inputs)
+
+
+```{r}
+odds.ratio <- function(x,conf.level=0.95,theta0=1)
+{
+  if (any(x==0)) x <- x+0.5
+  theta <- x[1,1] *
+    x[2,2]/(x[1,2]  *
+              x[2,1])
+  SE <- sqrt(sum(1/x))
+  Za2 <- qnorm(0.5 *
+                 (1+conf.level))
+  Low <- exp(log(theta)-Za2 * SE)
+  Up <- exp(log(theta)+Za2  *
+              SE)
+  CI <- c(Low,Up)
+  Z=(log(theta)-log(theta0))/SE
+  pv=2   *
+    pnorm(-abs(Z))
+  
+  logCI <- log(CI)
+  
+  list (estimator=theta, 
+        log.estimator=log(theta), 
+        asympt.SE=SE, 
+        conf.interval=CI,
+        conf.level=conf.level, 
+        Ztest=Z, 
+        p.value=pv,
+        log.conf.interval=logCI
+        )
+}
+```
+
+
+
+> For the  marginal contigency table of marijuana and cigarette, 
+> * compute the mle of the marginal odds ratio of marijuana and cigarette
+> * computet the 95% Confidence Interval of the marginal odds ratio of marijuana and cigarette
+> * perform a statiastical hypothesis test that marijuana and cigarette are independent at sig level 0.05 
+
+```{r}
+obs.xtabs <- xtabs(count ~ marijuana+cigarette+alcohol, data=obs.frame)
+
+obs.mc.xtabs <- margin.table(obs.xtabs, margin=c(1,2))
+
+odds.ratio.marijuana.cigarette <- odds.ratio(obs.mc.xtabs, conf.level=0.95, theta0=1 )
+odds.ratio.marijuana.cigarette
+
+```
+The MLE of the marginal odds ratio of marijuana and cigarette  is `r  odds.ratio.marijuana.cigarette$estimator` .  
+
+The 95% confidence interval of the marginal odds ratio of marijuana and cigarette is [`r odds.ratio.marijuana.cigarette$conf.interval`] .
+
+The hypothesis test with $H_0:\theta=1$ versus $H_1:\theta\ne1$ at sig. level 0.05 has a p-value `r odds.ratio.marijuana.cigarette$p.value` Hence I reject $H_0:\theta=1$ against $H_1:\theta\ne1$ at sig. level 0.05. 
+
+
+---
+
+## Fourfold Plots
+
+You can draw Fourfold Plots
+
+
+### Tables 2 x 2
+
+It is a graphical expression visualizing the odds ratio  
+
+$$\theta = \frac{n_{11}n_{22}}{n_{12}n_{21}}$$
+
+in 2 x 2 contingency tables. 
+
+It shows the departure from independence as  measured by the sample odds ratio, 
+
+Each cell $n_{ij}$ is represented as a quarter-circle with radius proportional to $\sqrt{n_{ij}}$ and area proportional to $n_{ij}$.  
+
+* If there is no association $\theta=1$ between classification variables, the quarter-circles should form a circle.
+
+* If there is positive association $\theta>1$ between classification variables, the  diagonal areas are greater  than the off-diagonal areas
+
+* If there is negative association $\theta<1$ between classification variables, the  diagonal areas are smaller  than the off-diagonal areas
+
+R provides a function to draw this kind of plots  by using the function `fourfoldplot' from the package `vcd' 
+
+> * Install `vcd' package and load it 
+
+```{r}
+# install.packages('vcd') # uncomment it if you have not installed package vcd
+library(vcd)
+```
+
+> Check in help the function fourfoldplot by usign the command `?fourfoldplot'
+> 
+> * Draw a Fourfold Plot for the marginal contigency table of marijuana and cigarette.  
+> * Discuss what you can see  
+
+```{r}
+obs.mc.xtabs <- margin.table(obs.xtabs, margin=c(1,2))
+
+fourfoldplot(obs.mc.xtabs)
+```
+
+Note that:  
+* The area of each shaded quadrant shows the observed counts.  
+* Circular arcs show the limits of confidence interval for the odds ratio.  
+
+
+### Tables 2 x 2 x K
+
+Fourfold Plots can be also used for 2 x 2 x K contigancy tables 
+
+> * Draw a Fourfold Plot for the contigency table of marijuana cigarette, and alcohol by controlling on the alcohol levels.  
+> * inspect the plots
+
+```{r}
+obs.xtabs <- xtabs(count ~ marijuana+cigarette+alcohol, data=obs.frame)
+
+fourfoldplot(obs.xtabs,
+             mfrow = c(1,2)
+             )
+```
+
+## Mosaic plot 
+
+Mosaic plot display graphically the cells of a contingency table as rectangular areas of size proportional to the corresponding observed frequencies.
+
+When the classification variables are independent the areas tend to be perfectly aligned in rows and columns.  
+
+The greater the deviation is, the worse the aforesaid alignment is.
+
+Furthermore, specific locations of the table that deviate from independence the most can be identified and thus the pattern of underlying association can be explained. 
+
+The strength of individual cells contribution to divergence from independence as well as the direction of the divergence are reflected in the magnitude and sign of the corresponding independence model’s residuals that can be incorporated in a mosaic plot.
+
+
+R provides a function to draw this kind of plots  by using the function `mosaic' from the package `vcd' 
+
+> * Install `vcd' package and load it 
+
+```{r}
+#install.packages('vcd') # uncomment it if you have not installed package vcd
+library(vcd)
+```
+
+> * Check the command `mosaic' in help by typing `?mosaic' 
+
+> For the I x J  case:
+> * Draw a Mosaic Plot for the marginal contigency table of marijuana cigarette. 
+>   * in particular use use mosaic(x,residuals_type="deviance",gp=shading_hcl)  where x is the contigency table of interest  
+> * Interpretet the plots 
+
+
+```{r}
+mosaic(obs.mc.xtabs, 
+       residuals_type="deviance",
+       gp=shading_hcl)
+```
+* I observe a substantial deviation from the Independent association. 
+
+* The p-value of the GoF test based on the deviance for independence model is below the colorbar, and smaller than 0.05; hence I reject the hipothesis at sig. level 5%.
+
+
+> For the I x J x K  case:
+> * Draw a Mosaic Plot for the contigency table of marijuana cigarette and alcohol. 
+> * Interpretet the plots 
+
+```{r}
+obs.xtabs <- xtabs(count ~ marijuana+cigarette+alcohol, data=obs.frame)
+mosaic(obs.xtabs, 
+       residuals_type="deviance",
+       gp=shading_hcl)
+```
+
+* I observe a substantial deviation from the Independent association. 
+
+* The p-value of the GoF test based on the deviance for independence model is below the colorbar, and smaller than 0.05; hence I reject the hypothesis at sig. level 5%.
 
 
 
@@ -296,7 +427,8 @@ obs.frame
 
 > * Consider the Log-linear model describing a homogeneous association between each pair of variables at each level of the third one; i.e. $[XY,XZ,YZ]$  
 >   
-> * Find the fitted values for $\mu_{i,j,k}$
+> * Find the fitted values for $\mu_{i,j,k}$, by using your own code  
+> * Check your results with R function 'loglin{stats}'  
 
 ***Solution***
 
@@ -324,16 +456,41 @@ for(i in 1:2)
 for (t in 1: 100) {
   
   mu_xy <- margin.table(mu_opt,c(1,2))
-  for (k in 1:2) mu_opt[,,k] <- mu_opt[,,k]*n_xy/mu_xy
+for(i in 1:2)
+  for(j in 1:2)
+    for(k in 1:2) 
+      mu_opt[i,j,k] <- mu_opt[i,j,k]*n_xy[i,j]/mu_xy[i,j]
   
   mu_xz <- margin.table(mu_opt,c(1,3))
-  for (j in 1:2) mu_opt[,j,] <- mu_opt[,j,]*n_xz/mu_xz
+  
+for(i in 1:2)
+  for(j in 1:2)
+    for(k in 1:2) 
+      mu_opt[i,j,k] <- mu_opt[i,j,k]*n_xz[i,k]/mu_xz[i,k]
   
   mu_yz <- margin.table(mu_opt,c(2,3))
-  for (i in 1:2) mu_opt[i,,] <- mu_opt[i,,]*n_yz/mu_yz
+for(i in 1:2)
+  for(j in 1:2)
+    for(k in 1:2) 
+      mu_opt[i,j,k] <- mu_opt[i,j,k]*n_yz[j,k]/mu_yz[j,k]
 }
 
+mu_opt
 ```
+
+```{r}
+# CHECK WITH COMMAND loglin
+obs.xtab <- xtabs(obs.frame)
+loglin(obs.xtab,
+         list(
+           c(1,2),
+           c(1,3),
+           c(2,3)
+           ),
+       fit = TRUE)$fit
+```
+
+
 
 > Present the fitted $\mu$'s as a data frame
 
@@ -361,7 +518,8 @@ as.data.frame(fit.array)
 
 > * Consider the Log-linear model describing mutual independence; i.e. $[X, Y,Z]$  
 >   
-> * Find the fitted values for $\mu_{i,j,k}$
+> 1. Write your own code to compute the fitted values for $\mu_{i,j,k}$  
+> 2. Check your ewsults with the R command 'loglin{stats}'  
 
 ***Solution***
 
@@ -388,25 +546,38 @@ for(i in 1:2)
 for (t in 1: 100) {
   
   mu_x <- margin.table(mu_opt,c(1))
-  for (j in 1:2) 
-    for (k in 1:2) 
-      mu_opt[,j,k] <- mu_opt[,j,k]*n_x/mu_x
+  for(i in 1:2)
+    for(j in 1:2)
+      for(k in 1:2)
+      mu_opt[i,j,k] <- mu_opt[i,j,k]*n_x[i]/mu_x[i]
   
   mu_y <- margin.table(mu_opt,c(2))
-  for (i in 1:2) 
-    for (k in 1:2) 
-      mu_opt[i,,k] <- mu_opt[i,,k]*n_y/mu_y
+  for(i in 1:2)
+    for(j in 1:2)
+      for(k in 1:2)
+      mu_opt[i,j,k] <- mu_opt[i,j,k]*n_y[j]/mu_y[j]
   
   mu_z <- margin.table(mu_opt,c(3))
-  for (i in 1:2)
-    for (j in 1:2)
-      mu_opt[i,j,] <- mu_opt[i,j,]*n_z/mu_z
+  for(i in 1:2)
+    for(j in 1:2)
+      for(k in 1:2)
+      mu_opt[i,j,k] <- mu_opt[i,j,k]*n_z[k]/mu_z[k]
 }
 
 
 mu_opt
 ```
-
+```{r}
+# CHECK WITH COMMAND loglin
+obs.xtab <- xtabs(obs.frame)
+loglin(obs.xtab,
+         list(
+           c(1),
+           c(2),
+           c(3)
+           ),
+       fit = TRUE)$fit
+```
 
 
 ***Example (Homework)***
@@ -432,7 +603,109 @@ obs.frame.accident<-data.frame(
 obs.frame.accident
 ```
 
-> Consider the Homogeneity association model $(GL,GS,GI,LS,LI,SI)$, and compute the fitted values for $\mu_{i,j,k,c}$
+> Consider the Homogeneity association model $(GZ,GS,GI,ZS,ZI,SI)$,  
+> 1. Write your own code to compute the fitted values for $\mu_{i,j,k,c}$  
+> 2. Check your ewsults with the R command 'loglin{stats}'
+
+
+***Solution***
+
+```{r}
+
+# Step 1 :  compute and save the minimal statistics
+
+obs.frame <- obs.frame.accident
+
+obs.xtab <- xtabs(obs.frame)
+n_ZG <- margin.table(obs.xtab,c(2,3))
+n_SG <- margin.table(obs.xtab,c(1,3))
+n_GI <- margin.table(obs.xtab,c(3,4))
+n_SZ <- margin.table(obs.xtab,c(1,2))
+n_ZI <- margin.table(obs.xtab,c(2,4))
+n_SI <- margin.table(obs.xtab,c(1,4))
+
+
+# Step 2: Create a seed for the fitted mu's
+
+# seed the mu_opt
+mu_opt <- obs.xtab
+for(s in 1:2)
+  for(z in 1:2)
+    for(g in 1:2)
+    	for(i in 1:2)
+      	  mu_opt[s,z,g,i] = 1.0
+
+# Step 3: Perform the loop to approximate the mu's
+
+for (t in 1: 100) {
+  
+  mu_ZG <- margin.table(mu_opt,c(2,3))
+  for(s in 1:2)
+    for(z in 1:2)
+      for(g in 1:2)
+      	for(i in 1:2)
+      	  mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_ZG[z,g]/mu_ZG[z,g]
+
+  mu_SG <- margin.table(mu_opt,c(1,3))
+  for(s in 1:2)
+    for(z in 1:2)
+      for(g in 1:2)
+      	for(i in 1:2)
+      	  mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_SG[s,g]/mu_SG[s,g]
+  
+  mu_GI <- margin.table(mu_opt,c(3,4))
+  for(s in 1:2)
+    for(z in 1:2)
+      for(g in 1:2)
+      	for(i in 1:2)
+          mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_GI[g,i]/mu_GI[g,i]
+  
+  mu_SZ <- margin.table(mu_opt,c(1,2))
+  for(s in 1:2)
+    for(z in 1:2)
+      for(g in 1:2)
+      	for(i in 1:2)
+          mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_SZ[s,z]/mu_SZ[s,z]
+  
+  mu_ZI <- margin.table(mu_opt,c(2,4))
+  for(s in 1:2)
+    for(z in 1:2)
+      for(g in 1:2)
+      	for(i in 1:2)
+          mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_ZI[z,i]/mu_ZI[z,i]
+  
+  mu_SI <- margin.table(mu_opt,c(1,4))
+  for(s in 1:2)
+    for(z in 1:2)
+      for(g in 1:2)
+      	for(i in 1:2)
+          mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_SI[s,i]/mu_SI[s,i]
+}
+
+mu_opt
+```
+
+```{r}
+# CHECK WITH COMMAND loglin
+obs.frame <- obs.frame.accident
+obs.xtab <- xtabs(obs.frame)
+loglin(obs.xtab,
+         list(
+           c(1,2),
+           c(1,3),
+           c(1,4),
+           c(2,3),
+           c(2,4),
+           c(3,4)
+           ),
+       fit = TRUE)$fit
+```
+
+
+
+> Consider the 3 way interaction model $(GLI,GSI,LSI,GLS)$.  
+> 1. Write your own code to compute the fitted values for $\mu_{i,j,k,c}$  
+> 2. Check your ewsults with the R command 'loglin{stats}'
 
 
 ***Solution***
@@ -465,23 +738,55 @@ for(s in 1:2)
 for (t in 1: 100) {
   
   mu_ZGI <- margin.table(mu_opt,c(2,3,4))
-  for (s in 1:2) mu_opt[s,,,] <- mu_opt[i,,,]*n_ZGI/mu_ZGI
+for(s in 1:2)
+  for(z in 1:2)
+    for(g in 1:2)
+    	for(i in 1:2)
+        mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_ZGI[z,g,i]/mu_ZGI[z,g,i]
 
   mu_SGI <- margin.table(mu_opt,c(1,3,4))
-  for (z in 1:2) mu_opt[,z,,] <- mu_opt[,z,,]*n_SGI/mu_SGI
+for(s in 1:2)
+  for(z in 1:2)
+    for(g in 1:2)
+    	for(i in 1:2)
+        mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_SGI[s,g,i]/mu_SGI[s,g,i]
   
   mu_SZI <- margin.table(mu_opt,c(1,2,4))
-  for (g in 1:2) mu_opt[,,g,] <- mu_opt[,,g,]*n_SZI/mu_SZI
+for(s in 1:2)
+  for(z in 1:2)
+    for(g in 1:2)
+    	for(i in 1:2)
+        mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_SZI[s,z,i]/mu_SZI[s,z,i]
   
   mu_SZG <- margin.table(mu_opt,c(1,2,3))
-  for (i in 1:2) mu_opt[,,,i] <- mu_opt[,,,i]*n_SZG/mu_SZG
+for(s in 1:2)
+  for(z in 1:2)
+    for(g in 1:2)
+    	for(i in 1:2)
+        mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_SZG[s,z,g]/mu_SZG[s,z,g]
 }
 
 mu_opt
 ```
+```{r}
+# CHECK WITH COMMAND loglin
+obs.frame <- obs.frame.accident
+obs.xtab <- xtabs(obs.frame)
+loglin(obs.xtab,
+         list(
+           c(2,3,4),
+           c(1,3,4),
+           c(1,2,4),
+           c(1,2,3)
+           ),
+       fit = TRUE)$fit
+```
 
 
-> Consider the independent model $(G, S, L, I)$, and compute the fitted values for $\mu_{i,j,k,c}$
+> Consider the independent model $(G, S, L, I)$  
+> 
+> 1. compute the fitted values for $\mu_{i,j,k,c}$, by using your own code  
+> 2. check your resutls with  'loglin{stats}'  
 
 ***Solution***
 
@@ -513,28 +818,32 @@ for(s in 1:2)
 for (t in 1: 100) {
   
   mu_S <- margin.table(mu_opt,c(1))
+for(s in 1:2)
   for(z in 1:2)
     for(g in 1:2)
     	for(i in 1:2)
-		mu_opt[,z,g,i] <- mu_opt[,z,g,i]*n_S/mu_S
+		mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_S[s]/mu_S[s]
   
   mu_Z <- margin.table(mu_opt,c(2))
-  for(s in 1:2)
+for(s in 1:2)
+  for(z in 1:2)
     for(g in 1:2)
     	for(i in 1:2)
-		mu_opt[s,,g,i] <- mu_opt[s,,g,i]*n_Z/mu_Z
+		mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_Z[z]/mu_Z[z]
   
   mu_G <- margin.table(mu_opt,c(3))
-  for(s in 1:2)
-    for(z in 1:2)
+for(s in 1:2)
+  for(z in 1:2)
+    for(g in 1:2)
     	for(i in 1:2)
-		mu_opt[s,z,,i] <- mu_opt[s,z,,i]*n_G/mu_G
+		mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_G[g]/mu_G[g]
   
   mu_I <- margin.table(mu_opt,c(4))
-  for(s in 1:2)
-    for(z in 1:2)
-    	for(g in 1:2)
-		mu_opt[s,z,g,] <- mu_opt[s,z,g,]*n_I/mu_I
+for(s in 1:2)
+  for(z in 1:2)
+    for(g in 1:2)
+    	for(i in 1:2)
+		mu_opt[s,z,g,i] <- mu_opt[s,z,g,i]*n_I[i]/mu_I[i]
 
 }
 
@@ -543,6 +852,20 @@ mu_opt
 ```
 
 
+
+```{r}
+# CHECK WITH COMMAND loglin
+obs.frame <- obs.frame.accident
+obs.xtab <- xtabs(obs.frame)
+loglin(obs.xtab,
+         list(
+           c(1),
+           c(2),
+           c(3),
+           c(4)
+           ),
+       fit = TRUE)$fit
+```
 
 
 ---------
@@ -816,7 +1139,7 @@ since $\mu_{i}(\beta)=\exp(\sum_{j}X_{i,j}\beta_{j})$.
 
 
 
-### ***Example (For Homework)***
+## Example (For Homework)
 
 Consider the data-set, Alcohol, Cigarette, and Marijuana
 
@@ -858,7 +1181,7 @@ obs.frame
 
 
 
-
+---
 
 # Save me  
 
