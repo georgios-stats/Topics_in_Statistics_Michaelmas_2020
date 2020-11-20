@@ -65,6 +65,13 @@ Handout 1: Basic probability tools in asymptotics
 + [03.Handout_asymptotics_after_transformation.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Likelihood_methods/03.Handout_asymptotics_after_transformation.pdf)    
 
 
+# Problem class handout: 
+
++ [ProblemClass_2.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Likelihood_methods/ProblemClass_2.pdf)     
+
+
+
+
 # Exercises:
 
 Exercises on Likelihood methods  
