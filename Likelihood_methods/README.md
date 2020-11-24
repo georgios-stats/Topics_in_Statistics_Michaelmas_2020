@@ -66,7 +66,7 @@ Handout 1: Basic probability tools in asymptotics
 
 + [04.Handout_estimation_with_ML.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Likelihood_methods/04.Handout_estimation_with_ML.pdf)    
 
-+ [05.Handout_Improving_subefficient_estimators.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/05.Handout_Improving_subefficient_estimators.pdf)    
++ [05.Handout_Improving_subefficient_estimators.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Likelihood_methods/05.Handout_Improving_subefficient_estimators.pdf)    
 
 + [06.Handout_confidence_intervals_hypothesis_tests.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Likelihood_methods/06.Handout_confidence_intervals_hypothesis_tests.pdf)    
 
