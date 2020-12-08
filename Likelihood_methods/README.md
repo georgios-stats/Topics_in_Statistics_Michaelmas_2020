@@ -70,6 +70,8 @@ Handout 1: Basic probability tools in asymptotics
 
 + [06.Handout_confidence_intervals_hypothesis_tests.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Likelihood_methods/06.Handout_confidence_intervals_hypothesis_tests.pdf)    
 
++ [07.Handout_profile_likelihood.pdf](https://github.com/georgios-stats/Topics_in_Statistics_Michaelmas_2020/blob/master/Likelihood_methods/07.Handout_profile_likelihood.pdf)    
+
 
 
 # Problem class handout: 
